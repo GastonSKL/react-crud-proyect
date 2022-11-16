@@ -1,0 +1,29 @@
+{
+  "razas": [
+    {
+      "id": 1,
+      "name": "Rotwailer",
+      "size": "Big"
+    },
+    {
+      "id": 2,
+      "name": "Beagle",
+      "size": "Small"
+    },
+    {
+      "id": 3,
+      "name": "Pitbull",
+      "size": "Medium"
+    },
+    {
+      "id": 4,
+      "name": "Colie",
+      "size": "Big"
+    },
+    {
+      "id": 5,
+      "name": "Labrador",
+      "size": "Big"
+    }
+  ]
+}
