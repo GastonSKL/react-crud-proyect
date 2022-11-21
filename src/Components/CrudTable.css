@@ -1,0 +1,9 @@
+.table{
+    padding: .5em;
+    margin: auto;
+}
+
+.table__head{
+    color: rgba(0, 0, 0, 0.671);
+    
+}
