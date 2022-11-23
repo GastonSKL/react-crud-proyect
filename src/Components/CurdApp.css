@@ -3,6 +3,7 @@
     background-color: #bd429859;
     border-radius: .6em;
     padding: 1em;
+    max-width: 30em;
 }
 
 .app__title{

@@ -29,12 +29,12 @@ export const CrudForm = ({createData, updateData, dataEdit, setDataEdit}) => {
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        if(!form.name || !form.tamaño){
+        if(!form.name || !form.size){
             alert("Datos incompletos!");
             return;
         }
 
-        if(form.id === null){
+        if(form.id === ""){
             createData(form)
         }else{
             updateData(form)
@@ -45,6 +45,7 @@ export const CrudForm = ({createData, updateData, dataEdit, setDataEdit}) => {
     }
 
     const handleReset = (e) =>{ 
+        console.log("limpado");
         setForm(initialForm);
         setDataEdit(null);
     }
@@ -56,11 +57,11 @@ export const CrudForm = ({createData, updateData, dataEdit, setDataEdit}) => {
 
             <input type="text" name='name' placeholder='Raza' onChange={handleChange} value={form.name}/>
 
-            <input type="text" name='tamaño' placeholder='Tamaño' onChange={handleChange} value={form.tamaño}/>
+            <input type="text" name='size' placeholder='Tamaño' onChange={handleChange} value={form.size}/>
 
             <input type='submit' value='Enviar'/>
 
-            <input type='reset' value='Limpiar' onReset={handleReset }/>
+            <input type='reset' value='Limpiar' onClick={handleReset}/>
 
         </form>
     </div>

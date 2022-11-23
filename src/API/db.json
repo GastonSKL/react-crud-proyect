@@ -1,29 +1,19 @@
 {
   "razas": [
     {
-      "id": 1,
-      "name": "Rotwailer",
-      "size": "Big"
-    },
-    {
-      "id": 2,
+      "id": 1669235787309,
       "name": "Beagle",
-      "size": "Small"
+      "size": "Chico"
     },
     {
-      "id": 3,
-      "name": "Pitbull",
-      "size": "Medium"
+      "id": 1669235796261,
+      "name": "Rotwailer",
+      "size": "Grande"
     },
     {
-      "id": 4,
-      "name": "Colie",
-      "size": "Big"
-    },
-    {
-      "id": 5,
+      "id": 1669235802316,
       "name": "Labrador",
-      "size": "Big"
+      "size": "Grande"
     }
   ]
 }
