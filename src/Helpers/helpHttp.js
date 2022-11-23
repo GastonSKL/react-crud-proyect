@@ -36,11 +36,11 @@ export const helpHttp = () => {
     options.method = "POST";
     return customFetch(url, options);
   };
-  const put = () => {
+  const put = (url, options = {}) => {
     options.method = "PUT";
     return customFetch(url, options);
   };
-  const del = () => {
+  const del = (url, options = {}) => {
     options.method = "DELETE";
     return customFetch(url, options);
   };

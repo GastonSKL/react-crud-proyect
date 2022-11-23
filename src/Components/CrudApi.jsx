@@ -55,16 +55,44 @@ export const CrudApi = () => {
   };
 
   const updateData = (info) => {
-    let newData = db.map((el) => (el.id === info.id ? info : el));
-    setDb(newData);
+    let endPoint = `${url}/${info.id}`;
+    let options = { 
+      body: info,
+      headers: {"content-type": "application/json"}
+     };
+
+    helpHttp()
+      .put(endPoint, options)
+      .then((res) => {
+        console.log(res);
+        if (!res.err) {
+          let newData = db.map((el) => (el.id === info.id ? info : el));
+          setDb(newData);
+        } else {
+          setError(res);
+        }
+      });
+    setDb([...db, info]);
+    
   };
 
   const deleteData = (id) => {
     let isDelete = window.confirm("¿Realmente desea eliminar la entrada?");
-
-    if (isDelete) {
-      let newData = db.filter((el) => el.id != id);
-      setDb(newData);
+    let options = { 
+      headers: {"content-type": "application/json"}
+     };
+    if (isDelete) { 
+      let endPoint = `${url}/${id}`;
+      helpHttp().del(endPoint, options).then(res => {
+        console.log(res);
+        if (!res.err) {
+          let newData = db.filter((el) => el.id != id);
+          setDb(newData);
+        } else {
+          setError(res);
+        }
+      });
+      
     } else {
       return;
     }
