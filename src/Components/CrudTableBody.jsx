@@ -7,8 +7,8 @@ export const CrudTableBody = ({ el, setDataEdit, deleteData }) => {
       <td>{name}</td>
       <td>{size}</td>
       <td>
-        <button onClick={()=> setDataEdit(el)}>Editar</button>
-        <button onClick={()=> deleteData(id)}>Eliminar</button>
+        <button  onClick={()=> setDataEdit(el)}>Editar</button>
+        <button  onClick={()=> deleteData(id)}>Eliminar</button>
       </td>
     </tr>
   );

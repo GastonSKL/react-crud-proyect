@@ -3,12 +3,22 @@
     {
       "id": 1669235796261,
       "name": "Rotwailer",
-      "size": "Grandeeee"
+      "size": "Grande"
     },
     {
       "id": 1669235802316,
       "name": "Labrador",
       "size": "Grande"
+    },
+    {
+      "id": 1669247468892,
+      "name": "Beagle",
+      "size": "Pequeño"
+    },
+    {
+      "id": 1669247477428,
+      "name": "Shiba Inu",
+      "size": "Pequeño"
     }
   ]
 }

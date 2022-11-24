@@ -1,9 +1,10 @@
 .app__container{
     border: 1px solid black;
-    background-color: #bd429859;
+    background-color: #eba952e8;
     border-radius: .6em;
     padding: 1em;
-    max-width: 30em;
+    width: 32em;
+    
 }
 
 .app__title{
@@ -11,5 +12,5 @@
     margin-bottom: .5em;
     font-weight: 800;
     letter-spacing: .3em;
-    color: rgba(255, 255, 255, 0.63);
+    color: rgba(0, 0, 0, 0.863);
 }

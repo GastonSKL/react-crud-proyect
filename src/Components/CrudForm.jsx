@@ -55,13 +55,13 @@ export const CrudForm = ({createData, updateData, dataEdit, setDataEdit}) => {
         <h3>{dataEdit ? "Editar" : "Agregar"}</h3>
         <form onSubmit={handleSubmit}>
 
-            <input type="text" name='name' placeholder='Raza' onChange={handleChange} value={form.name}/>
+            <input className='input' type="text" name='name' placeholder='Raza' onChange={handleChange} value={form.name}/>
 
-            <input type="text" name='size' placeholder='Tamaño' onChange={handleChange} value={form.size}/>
+            <input className='input' type="text" name='size' placeholder='Tamaño' onChange={handleChange} value={form.size}/>
 
-            <input type='submit' value='Enviar'/>
+            <input type='submit' value='ENVIAR' className='button'/>
 
-            <input type='reset' value='Limpiar' onClick={handleReset}/>
+            <input type='reset' value='LIMPIAR' className='button' onClick={handleReset}/>
 
         </form>
     </div>

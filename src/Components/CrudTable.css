@@ -1,9 +1,54 @@
-.table{
-    padding: .5em;
-    
+.table {
+  border: 1px solid #1c6ea4;
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
 }
 
-.table__head{
-    color: rgba(0, 0, 0, 0.671);
-    
+h3{
+    text-align: center;
+}
+
+td,
+th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+
+tbody,
+td {
+  font-size: 13px;
+}
+
+tr:nth-child(even) {
+  background: #d0e4f5;
+}
+
+thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #080808;
+  border-left: 2px solid #43494e;
+}
+
+thead {
+  background: #1c6ea4;
+  background: -moz-linear-gradient(top, #a38137 0%, #a37a21 66%, #8a620d 100%);
+  background: -webkit-linear-gradient(
+    top,
+    #a38137 0%,
+    #a37a21 66%,
+    #8a620d 100%
+  );
+  background: linear-gradient(to bottom, #8a620d 0%, #a37a21 66%, #a38137 100%);
+  border-bottom: 2px solid #444444;
+}
+
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+.table__head {
+  color: rgba(0, 0, 0, 0.671);
 }
